@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoQuest - Gamified Environmental Education</title>
+    <script>
+      window.addEventListener('error', function(event) {
+        document.body.innerHTML += '<div style="color:red; background:white; padding:20px; z-index:9999; position:absolute; top:0; left:0; width:100%;"><h3 style="font-size:20px; margin:0 0 10px 0;">Error Occurred</h3><pre style="white-space:pre-wrap;">' + (event.error ? event.error.stack : event.message) + '</pre></div>';
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
